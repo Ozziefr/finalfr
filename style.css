@@ -3,11 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 body {
   height: 100vh;
   color: white;
   background-color: #1d2d4a;
+  overflow-x: hidden;
 }
 nav {
   height: 75px;
@@ -437,7 +439,7 @@ a {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1500px) {
   body {
     height: 100vh;
     color: white;

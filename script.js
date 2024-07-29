@@ -3,6 +3,7 @@ function openNav() {
   document.querySelector("aside").style.display = "flex";
   document.querySelector(".homeright").style.display = "none";
   document.querySelector(".home").style.width = "63%";
+  document.querySelector(".cart").style.display = "none";
 }
 function closeNav() {
   document.querySelector("aside").style.display = "none";

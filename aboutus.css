@@ -334,28 +334,29 @@ aside li:hover {
     opacity: 1;
   }
 }
-.linee1 {
+.Linee1 {
   width: 100%;
 }
-.linee2 {
+.Linee2 {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  background-color: red;
 }
-.linee2 img {
+.Linee2 img {
   max-width: 100px;
   height: auto;
   height: 100px;
 }
-.linee3 {
+.Linee3 {
   width: 100%;
 }
-.linee4 {
+.Linee4 {
   width: 100%;
 }
-.linee5 {
+.Linee5 {
   width: 100%;
 }
 
@@ -565,11 +566,11 @@ aside li:hover {
 }
 /* end of big screen */
 /* biggining for smaller laptops */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1500px) {
   body {
     height: 100vh;
     color: white;
-    background-color: red;
+    background-color: #1d2d4a;
   }
   nav {
     height: 75px;
