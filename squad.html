@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./squad.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <nav>
+        <div class="left">
+          <a href="./index.html"><p>Home</p></a>
+          <a href="./aboutus.html"><p>About Us</p></a>
+          <p id="Homebor">Games</p>
+          <input id="checkbox" type="checkbox" />
+          <label class="toggle" for="checkbox" onclick="openNav()">
+            <div id="bar1" class="bars"></div>
+            <div id="bar2" class="bars"></div>
+            <div id="bar3" class="bars"></div>
+          </label>
+          <aside>
+            <ul>
+              <button class="button" onclick="closeNav()">
+                <span class="X"></span>
+                <span class="Y"></span>
+                <div class="close">Close</div>
+              </button>
+              <li class="hideOnMobile" id="jspreg" onclick="openRegister()">
+                Register
+              </li>
+              <li class="hideOnMobile" onclick="openLogin()" id="jsplog">
+                Login
+              </li>
+              <a href="./index.html"><li class="hideOnMobile">Home</li></a>
+              <a href="./aboutus.html"
+                ><li class="hideOnMobile">About us</li></a
+              >
+              <li class="hideOnMobile">Games</li>
+            </ul>
+          </aside>
+        </div>
+      </nav>
+    </div>
+    <div class="cart">
+      <h2>Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-slide">
+              <img
+                src="./games/squad/ss_62314ae7cc786d5f4ce67f191d37e9a1520d4cb4.600x338.jpg"
+                alt="Image 1"
+              />
+              <img
+                src="./games/squad/ss_a419d181682533a3b5b624773bacfb3b0279ad0e.600x338.jpg"
+                alt="Image 2"
+              />
+              <img
+                src="./games/squad/ss_a5857bdd1ff0c71e6af12393d4642b40cc55f48d.600x338.jpg"
+                alt="Image 3"
+              />
+              <img
+                src="./games/squad/ss_b4e0a80cd5d70fcf2e04e44f08afc598db8bee08.600x338.jpg"
+                alt="Image 4"
+              />
+              <img
+                src="./games/squad/ss_d011bf94a4bfbb645c09c09fa0f68061522fa5dc.600x338.jpg"
+                alt="Image 5"
+              />
+              <img
+                src="./games/squad/ss_dad75bd528133c48043da1479eedb83f6cfa9f8a.600x338.jpg"
+                alt="Image 6"
+              />
+              <img
+                src="./games/squad/ss_e58eec44436ef659065f12837cfc9c55c8ae9073.600x338.jpg"
+                alt="Image 7"
+              />
+            </div>
+          </div>
+          <div class="deal-label">
+            WEEKEND DEAL - Squad <span class="discount">-10% $20.00 USD</span>
+          </div>
+          <button class="buy-button" onclick="addToCart('SQUAD', 20)">
+            Buy
+          </button>
+        </div>
+      </div>
+      <div id="container">
+        <div id="cont">
+          <div id="login" class="comm">
+            <ul>
+              <button class="button" onclick="closeLogin()">
+                <span class="X"></span>
+                <span class="Y"></span>
+                <div class="close">Close</div>
+              </button>
+            </ul>
+            <p>Login</p>
+            <input id="se" type="email" placeholder="Email" required />
+            <input id="sp" type="password" placeholder="Password" required />
+            <input type="submit" onclick="login()" value="Login" />
+            <p onclick="forTabFun()" class="fargot">Forget Password?</p>
+          </div>
+          <div id="register" class="comm">
+            <ul>
+              <button class="button" onclick="closeRegister()">
+                <span class="X"></span>
+                <span class="Y"></span>
+                <div class="close">Close</div>
+              </button>
+            </ul>
+            <p>Register</p>
+            <input id="re" type="email" placeholder="Email" required />
+            <input id="rp" type="password" placeholder="Password" required />
+            <input
+              id="rrp"
+              type="password"
+              placeholder="Re-write Password"
+              required
+            />
+            <input type="submit" onclick="register()" value="Register" />
+          </div>
+          <div id="forgot" class="comm">
+            <ul>
+              <button class="button" onclick="closeRegister()">
+                <span class="X"></span>
+                <span class="Y"></span>
+                <div class="close">Close</div>
+              </button>
+            </ul>
+            <p>Forgot Password</p>
+            <div>
+              <input id="fe" type="email" placeholder="Email" required />
+              <input type="submit" onclick="forgot()" value="Submit" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </body>
+  <script src="./imageslogic.js"></script>
+  <script src="./script.js"></script>
+</html>

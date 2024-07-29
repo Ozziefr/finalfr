@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./aboutus.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <nav>
+        <div class="left">
+          <a href="./index.html" class="toppp"><p>Home</p></a>
+          <p id="Homebor">About Us</p>
+          <a href="./games.html" class="toppp"><p>Games</p></a>
+          <input id="checkbox" type="checkbox" />
+          <label class="toggle" for="checkbox" onclick="openNav()">
+            <div id="bar1" class="bars"></div>
+            <div id="bar2" class="bars"></div>
+            <div id="bar3" class="bars"></div>
+          </label>
+          <aside>
+            <ul>
+              <button class="button" onclick="closeNav()">
+                <span class="X"></span>
+                <span class="Y"></span>
+                <div class="close">Close</div>
+              </button>
+              <li class="hideOnMobile" id="jspreg" onclick="openRegister()">
+                Register
+              </li>
+              <li class="hideOnMobile" onclick="openLogin()" id="jsplog">
+                Login
+              </li>
+              <li class="hideOnMobile">Home</li>
+              <a href="./aboutus.html"
+                ><li class="hideOnMobile">About us</li></a
+              >
+              <a href="./games.html"><li class="hideOnMobile">Games</li></a>
+            </ul>
+          </aside>
+        </div>
+      </nav>
+    </div>
+    <div class="ktiba">
+      <h1>What is Ozzie's Shop?</h1>
+      <div class="Linee1">
+        <p class="text1">
+          <b>What do we stand for?</b>
+
+          Ozzie's Shop is your ultimate destination for all things gaming.
+          Drawing inspiration from industry giants, our platform delivers an
+          immersive and diverse gaming experience with an extensive game library
+          and exclusive promotions.
+        </p>
+      </div>
+
+      <div class="Linee2">
+        <p class="text2">
+          <b>Discover Unique Games:</b>Whether you’re a fan of blockbuster hits
+          or indie gems, Ozzie's Shop offers a wide range of titles to satisfy
+          every gaming desire. Explore our carefully curated catalog and find
+          your next obsession with just a few clicks.
+        </p>
+        <img src="./images/gamess.png" alt="games" />
+      </div>
+
+      <div class="Linee3">
+        <p class="text3">
+          <b>Enjoy Unbeatable Deals</b> Don’t miss out on our regular sales and
+          exceptional discounts. Ozzie's Shop is the perfect place to snag great
+          deals and expand your collection without breaking the bank.
+        </p>
+      </div>
+
+      <div class="Linee4">
+        <p class="text4">
+          <b>Join a Thriving Community:</b>Connect with passionate gamers,
+          engage in lively discussions, and stay on top of the latest trends in
+          the gaming world. Our forums and community groups are the heart of
+          Ozzie's Shop.
+        </p>
+      </div>
+
+      <div class="Linee5">
+        <p class="text5">
+          <b>A Secure and User-Friendly Platform:</b>We are committed to
+          providing a smooth and secure user experience. Navigate easily, manage
+          your purchases, and benefit from our responsive customer support for
+          any inquiries you may have.
+        </p>
+      </div>
+    </div>
+    <div id="container">
+      <div id="cont">
+        <div id="login" class="comm">
+          <ul>
+            <button class="button" onclick="closeLogin()">
+              <span class="X"></span>
+              <span class="Y"></span>
+              <div class="close">Close</div>
+            </button>
+          </ul>
+          <p>Login</p>
+          <input id="se" type="email" placeholder="Email" required />
+          <input id="sp" type="password" placeholder="Password" required />
+          <input type="submit" onclick="login()" value="Login" />
+
+          <p onclick="forTabFun()" class="fargot">Forget Password?</p>
+        </div>
+        <div id="register" class="comm">
+          <ul>
+            <button class="button" onclick="closeRegister()">
+              <span class="X"></span>
+              <span class="Y"></span>
+              <div class="close">Close</div>
+            </button>
+          </ul>
+          <p>Register</p>
+
+          <input id="re" type="email" placeholder="Email" required />
+          <input id="rp" type="password" placeholder="Password" required />
+          <input
+            id="rrp"
+            type="password"
+            placeholder="Re write Password"
+            required
+          />
+          <input type="submit" onclick="register()" value="Register" />
+        </div>
+        <div id="forgot" class="comm">
+          <ul>
+            <button class="button" onclick="closeRegister()">
+              <span class="X"></span>
+              <span class="Y"></span>
+              <div class="close">Close</div>
+            </button>
+          </ul>
+          <p>Forgot Password</p>
+          <div>
+            <input id="fe" type="email" placeholder="Email" required />
+            <input type="submit" onclick="forgot()" value="Submit" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+  <script src="./loginregisterlogic.js"></script>
+</html>

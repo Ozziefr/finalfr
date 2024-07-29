@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ozzie Store</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav>
+        <div class="left">
+          <p id="Homebor">Home</p>
+          <a href="./aboutus.html"><p>About Us</p></a>
+          <a href="./games.html"><p>Games</p></a>
+          <input id="checkbox" type="checkbox" />
+          <label class="toggle" for="checkbox" onclick="openNav()">
+            <div id="bar1" class="bars"></div>
+            <div id="bar2" class="bars"></div>
+            <div id="bar3" class="bars"></div>
+          </label>
+          <aside>
+            <ul>
+              <button class="button" onclick="closeNav()">
+                <span class="X"></span>
+                <span class="Y"></span>
+                <div class="close">Close</div>
+              </button>
+              <li class="hideOnMobile" id="jspreg" onclick="openRegister()">
+                Register
+              </li>
+              <li class="hideOnMobile" onclick="openLogin()" id="jsplog">
+                Login
+              </li>
+              <li class="hideOnMobile">Home</li>
+              <a href="./aboutus.html"
+                ><li class="hideOnMobile">About us</li></a
+              >
+              <a href="./games.html"><li class="hideOnMobile">Games</li></a>
+            </ul>
+          </aside>
+        </div>
+      </nav>
+    </div>
+    <div class="home">
+      <div class="homeleft">
+        <p class="hometop">Welcome To Ozzie & Co</p>
+        <p class="hometext">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat omnis
+          quae sint necessitatibus perferendis at voluptates natus quas maxime
+          non dignissimos asperiores totam, sed maiores dolorem sunt saepe, fuga
+          mollitia.
+        </p>
+      </div>
+      <div class="homeright">
+        <div class="card1">
+          <div>
+            <img src="./images/icons8-ps4-64.png" alt="controller" />
+          </div>
+        </div>
+
+        <div class="card2">
+          <img src="./images/icons8-keyboard-100.png" alt="Keyboard" />
+        </div>
+
+        <div class="card3">
+          <img src="./images/icons8-xbox-100.png" alt="Xbox" />
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <div id="cont">
+        <div id="login" class="comm">
+          <ul>
+            <button class="button" onclick="closeLogin()">
+              <span class="X"></span>
+              <span class="Y"></span>
+              <div class="close">Close</div>
+            </button>
+          </ul>
+          <p>Login</p>
+          <input id="se" type="email" placeholder="Email" required />
+          <input id="sp" type="password" placeholder="Password" required />
+          <input type="submit" onclick="login()" value="Login" />
+
+          <p onclick="forTabFun()" class="fargot">Forget Password?</p>
+        </div>
+        <div id="register" class="comm">
+          <ul>
+            <button class="button" onclick="closeRegister()">
+              <span class="X"></span>
+              <span class="Y"></span>
+              <div class="close">Close</div>
+            </button>
+          </ul>
+          <p>Register</p>
+
+          <input id="re" type="email" placeholder="Email" required />
+          <input id="rp" type="password" placeholder="Password" required />
+          <input
+            id="rrp"
+            type="password"
+            placeholder="Re write Password"
+            required
+          />
+          <input type="submit" onclick="register()" value="Register" />
+        </div>
+        <div id="forgot" class="comm">
+          <ul>
+            <button class="button" onclick="closeRegister()">
+              <span class="X"></span>
+              <span class="Y"></span>
+              <div class="close">Close</div>
+            </button>
+          </ul>
+          <p>Forgot Password</p>
+          <div>
+            <input id="fe" type="email" placeholder="Email" required />
+            <input type="submit" onclick="forgot()" value="Submit" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./loginregisterlogic.js"></script>
+</html>
