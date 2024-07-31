@@ -81,11 +81,27 @@ function createRemoveButton(index) {
 }
 
 function checkout() {
-  alert(
-    `Checkout - Total: $${cart
-      .reduce((acc, item) => acc + item.price, 0)
-      .toFixed(2)}`
-  );
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Punshrase Succesful",
+    showConfirmButton: true,
+    timer: 3000,
+  });
+
   cart = [];
   updateCart();
 }
+
+document.getElementById("readMoreBtn").addEventListener("click", function () {
+  var moreInfo = document.getElementById("moreInfo");
+  var btnText = this;
+
+  if (moreInfo.style.display === "none") {
+    moreInfo.style.display = "block";
+    btnText.innerHTML = 'READ LESS <span class="arrow">▲</span>';
+  } else {
+    moreInfo.style.display = "none";
+    btnText.innerHTML = 'READ MORE <span class="arrow">▼</span>';
+  }
+});

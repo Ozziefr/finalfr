@@ -342,14 +342,8 @@ aside li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  background-color: red;
 }
-.Linee2 img {
-  max-width: 100px;
-  height: auto;
-  height: 100px;
-}
+
 .Linee3 {
   width: 100%;
 }
@@ -468,6 +462,7 @@ aside li:hover {
 }
 .ktiba .text2 b {
   font-size: 25px;
+  width: 100px;
 }
 .ktiba .text3 b {
   font-size: 25px;

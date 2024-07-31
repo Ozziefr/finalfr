@@ -72,6 +72,7 @@ nav img {
   gap: 110px;
   font-size: 25px;
   align-items: center;
+  z-index: 2;
 }
 #Homebor {
   border-bottom: solid 5px #1a9fff;
@@ -497,9 +498,9 @@ nav img {
   display: flex;
   gap: 110px;
   font-size: 25px;
-  align-items:center;
+  align-items: center;
 }
-.left ul{
+.left ul {
   z-index: 1;
 }
 #Homebor {
@@ -782,7 +783,6 @@ a {
   font-size: 20px;
 }
 
-
 .deal-label {
   position: absolute;
   bottom: 50px;
@@ -815,7 +815,7 @@ a {
 }
 
 .cart {
-  position: absolute;
+  position: fixed;
   height: 140px;
   width: 200px;
   top: 0px;
@@ -828,7 +828,7 @@ a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   color: #c6d4df;
   margin-top: 100px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .cart h2 {
@@ -844,28 +844,133 @@ a {
 .cart ul li {
   margin-bottom: 1px;
 }
-.cart button{
+.cart button {
   border-radius: 10px;
   padding: 5px;
   font-family: Arial, sans-serif;
   font-size: 12px;
   border: solid white;
 }
-.gameinfo #infoo{
+.gameinfo {
+  width: 50%;
+}
+.gameinfo #infoo {
   font-family: Arial, sans-serif;
-  border-top: solid white 1px ;
+  border-top: solid white 1px;
 }
-.gameinfo h1{
-  margin-left: 200px;
-  margin-right: 500px;
-}
-.gameinfo p{
-  margin-left: 200px;
-  margin-right: 500px;
+
+.gameinfo p {
   font-size: 14px;
   font-weight: 100;
   margin-top: 10px;
-  color: #9EB29F;
+  color: #9eb29f;
   line-height: 28px;
   margin-top: 20px;
+}
+#moreInfo {
+  transition: max-height 0.5s ease-in-out;
+}
+
+#readMoreBtn {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #a9a9a9;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  text-align: right;
+  width: 100%;
+}
+
+#readMoreBtn .arrow {
+  margin-left: 5px;
+}
+
+#readMoreBtn:hover {
+  color: #ffffff;
+}
+
+#readMoreBtn:focus {
+  outline: none;
+}
+.swal2-popup {
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 300px;
+  margin-right: 650px;
+}
+
+.swal2-title {
+  font-size: 24px;
+  color: #ffcc00;
+}
+
+.swal2-content {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.swal2-confirm {
+  background-color: #ffcc00 !important;
+  color: #333 !important;
+  border: none !important;
+  border-radius: 5px !important;
+  padding: 10px 20px !important;
+}
+
+.swal2-confirm:hover {
+  background-color: #ff9900 !important;
+}
+
+.swal2-icon.swal2-success {
+  border-color: #ffcc00 !important;
+  color: #ffcc00 !important;
+}
+.gameinfo2 {
+  width: 25%;
+  height: 300px;
+  position: relative;
+  top: 20px;
+  left: 450px;
+  display: flex;
+  border: solid 10px #17212e;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 15px;
+  color: #5daef2;
+}
+.gameinfo2 p {
+  border: solid 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 25px;
+  background-color: #111922;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gameinfo2 img {
+  width: 30px;
+}
+.gameinfo2 h1 {
+  font-size: 15px;
+  background-color: #182834;
+  height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  width: 100%;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.infoa {
+  display: flex;
 }

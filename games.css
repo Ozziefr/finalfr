@@ -54,7 +54,41 @@ nav img {
 #checkbox {
   display: none;
 }
+.swal2-popup {
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 300px;
+  margin-right: 650px;
+}
 
+.swal2-title {
+  font-size: 24px;
+  color: #ffcc00;
+}
+
+.swal2-content {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.swal2-confirm {
+  background-color: #ffcc00 !important;
+  color: #333 !important;
+  border: none !important;
+  border-radius: 5px !important;
+  padding: 10px 20px !important;
+}
+
+.swal2-confirm:hover {
+  background-color: #ff9900 !important;
+}
+
+.swal2-icon.swal2-success {
+  border-color: #ffcc00 !important;
+  color: #ffcc00 !important;
+}
 .toggle {
   position: relative;
   width: 40px;
@@ -373,14 +407,19 @@ a {
 
 .cart {
   position: fixed;
-  top: 10px;
-  right: 10px;
+  height: 140px;
+  width: 200px;
+  top: 0px;
+  right: 0px;
+  font-family: Arial, sans-serif;
   background-color: #171a21;
   padding: 20px;
-  border: 1px solid #4a4a4a;
+  border: 5px solid #4a4a4a;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   color: #c6d4df;
+  margin-top: 100px;
+  z-index: 1;
 }
 
 .cart h2 {
@@ -394,5 +433,12 @@ a {
 }
 
 .cart ul li {
-  margin-bottom: 5px;
+  margin-bottom: 1px;
+}
+.cart button {
+  border-radius: 10px;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  border: solid white;
 }
